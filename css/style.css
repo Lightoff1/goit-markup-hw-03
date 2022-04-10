@@ -41,7 +41,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Стилизируем header */
@@ -240,6 +240,9 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.team-image{
+  display: block;
+}
 .our-team-list{
   display: flex;
 }
@@ -269,16 +272,17 @@ body {
 }
 
 /* стилизируем portfolio.html */
+.portfolio {
+  padding-bottom: 94px;
+}
 
 .portfolio-title{
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 /* кнопки фильтров */
 button {
-  font: inherit;
-  
+  font: inherit;  
 }
 .filter-buttons{
   display: flex;  
@@ -329,9 +333,12 @@ button {
   margin-right: 0px;
 }
  .our-projects .item:nth-last-child(-n+3){
-  margin-bottom: 0px;
+  margin-bottom: 0px; 
 }
-.project-sign{
+.image-of-project{
+  display: block;
+}
+.project-sign {
 display: flex;
 flex-direction: column;
 padding-left: 24px;
@@ -366,7 +373,6 @@ border-left: 1px solid #EEEEEE;
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    padding-left: 215px;
     padding-bottom: 60px;
 
   }
