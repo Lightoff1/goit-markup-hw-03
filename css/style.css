@@ -47,6 +47,7 @@ body {
 /* Стилизируем header */
 .header {
   background-color: var(--tertiary-text-color);
+  border-bottom: 1px solid #ECECEC;
   }
 
 /* Логотип */ 
@@ -99,7 +100,7 @@ body {
   }
 
 .header-contacts .mail-header,
-.header-contacts .phone {
+.header-contacts .phone-header {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -114,10 +115,10 @@ body {
   color: var(--accent-color);
 }
 
-.header-contacts .mail:hover,
-.header-contacts .mail:focus,
-.header-contacts .phone:hover,
-.header-contacts .phone:focus {
+.header-contacts .mail-header:hover,
+.header-contacts .mail-header:focus,
+.header-contacts .phone-header:hover,
+.header-contacts .phone-header:focus {
   color: var(--accent-color);
 }
 
@@ -129,13 +130,9 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
   text-align: center;
-
   background-color: #2f303a;
-  width: 1600px;
-  
-}
+  }
 
 .hero-title {
   color: var(--tertiary-text-color);
@@ -171,11 +168,12 @@ body {
 
 /* Особенности */
 .features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-list-title{
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .features-title {
   color: var(--secondary-text-color);
@@ -184,7 +182,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-top: 0px;
 }
 .features-list {
@@ -205,9 +203,9 @@ body {
 }
 /* Чем мы занимаемся */
 .what-are-we-doing {
-  text-align: center;
-  margin-bottom: 94px;
-}
+text-align: center;
+padding-bottom: 94px;
+  }
 .what-are-we-doing-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -228,51 +226,52 @@ body {
     text-align: center;
     background-color: #f5f4fa;
     padding-bottom: 94px; 
+    padding-top: 94px;
   }
 .our-team-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  letter-spacing: 0.03em;  
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 .team-image{
   display: block;
 }
+
 .our-team-list{
   display: flex;
 }
 .our-team-list .item:not(:last-child){
   margin-right: 30px;
 }
+.our-team-sign{
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: var(--tertiary-text-color);
+}
 .our-team-name {
-  background-color: var(--tertiary-text-color);
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;  
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
-.our-team-spec {
-  background-color: var(--tertiary-text-color);
+.our-team-spec { 
   font-size: 16px;
   line-height: 1.19;  
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 /* стилизируем portfolio.html */
 .portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -287,12 +286,13 @@ button {
 .filter-buttons{
   display: flex;  
   padding-bottom: 50px;
-  padding-top: 94px;
+  
   justify-content: center;
 }
 
-.filter-button {   
-  min-width: 73px;
+.filter-button {  
+  padding-left: 22px;
+  padding-right: 22px; 
   height: 38px;
   cursor: pointer;
   font-weight: 500;
@@ -339,9 +339,11 @@ button {
   display: block;
 }
 .project-sign {
-display: flex;
-flex-direction: column;
+padding-top: 20px;
+padding-right: 24px;
+padding-bottom: 20px;
 padding-left: 24px;
+
 border-right: 1px solid #EEEEEE;
 border-bottom: 1px solid #EEEEEE;
 border-left: 1px solid #EEEEEE;
@@ -349,7 +351,7 @@ border-left: 1px solid #EEEEEE;
 .our-project-name {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 24px;
+  
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -359,7 +361,7 @@ border-left: 1px solid #EEEEEE;
 .our-project-id {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 20px;
+  
   font-size: 16px;
   line-height: 1.89;
   letter-spacing: 0.03em;
@@ -368,15 +370,10 @@ border-left: 1px solid #EEEEEE;
 /* Подвал */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
   }
-  .footer .container{
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-  }
-
+    
 .logo-studio-foot {
   color: var(--tertiary-text-color);
   font-family: "Raleway";
@@ -392,7 +389,8 @@ border-left: 1px solid #EEEEEE;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts .mail,
